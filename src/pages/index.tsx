@@ -77,7 +77,6 @@ export default function Home() {
       </Head>
       <GlobalStyles />
       <Main />
-      <h1>HelloWord</h1>
     </>
     )
 }

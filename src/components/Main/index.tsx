@@ -1,6 +1,14 @@
+import MainBanner from "./MainBanner";
+import CampaignOffers from "./MainBanner";
+import BottomBanner from "./MainBanner";
+
 function index() {
   return (
-    <div>Main</div>
+    <>
+      <MainBanner />
+      <CampaignOffers /> 
+      <BottomBanner />
+    </>
   )
 }
 
