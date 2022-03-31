@@ -1,6 +1,10 @@
+import { Header } from './styles'
+
 function index() {
   return (
-    <div>Header</div>
+    <Header>
+      Header
+    </Header>
   )
 }
 

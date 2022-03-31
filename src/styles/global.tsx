@@ -26,6 +26,31 @@ export default createGlobalStyle`
     --grey-trash-icon: #B6BBC2;
     --grey-line: #DEE0E4;
   }
+
+  html {
+    /* 62.5% of 16px base font size is 10px */
+    font-size: 62.5%;
+  } 
+
+  body {
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+
+  body, input, textarea, select, button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
   
 `
 
