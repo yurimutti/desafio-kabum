@@ -18,7 +18,7 @@ export default createGlobalStyle`
     --orange-weak: #FF6500;
     --white: #FFFFFF;
     --white-weak: #F5F5F5;
-    --blue: #0060b1;
+    --blue: #355EAE;
     --dark-blue: #022448;
     --green: #2DC26E;
     --green-text: #1F9050;
