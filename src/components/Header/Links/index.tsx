@@ -1,6 +1,17 @@
+import Notifications from './Notifications'
+import Wishlist from './Wishlist'
+import Cart from './Cart'
+
+import { Div } from './styles'
+
+
 function index() {
   return (
-    <div>Links</div>
+    <Div>
+      <Notifications />
+      <Wishlist />
+      <Cart />
+    </Div>
   )
 }
 

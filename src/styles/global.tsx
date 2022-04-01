@@ -33,8 +33,11 @@ export default createGlobalStyle`
   } 
 
   body {
+    background-repeat: no-repeat;
+    background-size: contain;
     background: var(--dark-blue);
     color: var(--white);
+    min-height: 100vh;
   }
 
   body, input, textarea, select, button {
@@ -43,15 +46,30 @@ export default createGlobalStyle`
     font-weight: 400;
   }
 
+  input {
+    border: none;
+    outline: none;
+  }
+
   button {
     cursor: pointer;
+    border: none;
+    background: transparent;
   }
 
   a {
     color: inherit;
     text-decoration: none;
   }
-  
+
+  ul {
+    list-style: none;
+  }  
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
 `
 
 

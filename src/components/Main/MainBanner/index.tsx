@@ -1,6 +1,12 @@
+import { MainBannerInner } from './styles'
+
 function index() {
   return (
-    <div>Main Banner</div>
+    <MainBannerInner >
+      <a href="#">
+        <img src="/images/top-banner.jpg" alt="Banner Principal KaBuM!"/>
+      </a>
+    </MainBannerInner>
   )
 }
 

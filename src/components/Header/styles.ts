@@ -4,9 +4,11 @@ export const Header = styled.header`
   background: var(--blue)
 `
 export const Container = styled.section`
-  max-width: 76rem;
-  margin: 0px auto;
+  align-items: center;  
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 2.4rem 0;  
 `
+
