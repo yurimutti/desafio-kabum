@@ -1,15 +1,22 @@
 import styled from "styled-components"
 
 export const Main = styled.main`
-  background: var(--white);
-  margin: 0 4rem;
-`
-export const Container= styled.main`
-    /* display: flex;
-    flex: 1 1 0%;
-    flex-direction: column;
-    max-width: 1440px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: var(--dark-blue);
+  padding-bottom: 4.8rem;
+
+  .mainWrapper {
     align-items: center;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
     justify-content: center;
-    overflow-x: hidden; */
+    margin: 0 auto;
+    margin: 0 auto;
+    max-width: 1400px;
+    max-width: 1400px;
+    overflow-x: hidden;
+  }
 `

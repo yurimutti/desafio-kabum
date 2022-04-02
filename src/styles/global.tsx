@@ -17,7 +17,7 @@ export default createGlobalStyle`
     --orange-text: #FC6B0F;
     --orange-weak: #FF6500;
     --white: #FFFFFF;
-    --white-weak: #F5F5F5;
+    --white-weak: #FAFAFB;
     --blue: #355EAE;
     --dark-blue: #022448;
     --green: #2DC26E;
@@ -33,14 +33,10 @@ export default createGlobalStyle`
   } 
 
   body {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background: var(--dark-blue);
     color: var(--white);
-    min-height: 100vh;
   }
 
-  body, input, textarea, select, button {
+  body, input, textarea, select {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;

@@ -1,6 +1,14 @@
+import Shelfs from "../../Shelfs"
+import Countdown from "./Countdown"
+
+import { CampaingOffers } from "./styles"
+
 function index() {
   return (
-    <div>CampaignOffers</div>
+    <CampaingOffers>
+      <Countdown />
+      <Shelfs />
+    </CampaingOffers>
   )
 }
 

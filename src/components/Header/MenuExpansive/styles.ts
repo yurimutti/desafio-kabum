@@ -32,19 +32,20 @@ export const Nav = styled.nav`
     }
 
     .dropdown {
-      position: relative;
       background: var(--orange-strong);
+      position: relative;
       z-index: 2;
 
       &::before {
-        position: absolute;
-        width: 120%;
-        height: 100%;
-        top: 0;
-        left: -120%;
-        content: '';
         background: var(--orange-strong);
+        content: '';
         display: block;
+        height: 100%;
+        left: -140%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 140%;
         z-index: 1;
       }
 
@@ -63,5 +64,5 @@ export const Nav = styled.nav`
 
 export const Container = styled.section`
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 1200px;
 `

@@ -1,18 +1,20 @@
 import MainBanner from "./MainBanner";
 import CampaignOffers from "./CampaignOffers";
-import BottomBanner from "./BottomBanner";
+import BottomBanners from "./BottomBanners";
 
-import { Main, Container } from './styles'
+import { Main } from './styles'
 
 function index() {
   return (
-    <Main >
-      <Container>
-        <MainBanner />
-        <CampaignOffers /> 
-        <BottomBanner />
-      </Container>
-    </Main>
+    <>
+      <Main >
+        <div className="mainWrapper">
+          <MainBanner />
+          <CampaignOffers /> 
+          <BottomBanners />
+        </div>
+      </Main>
+    </>
   )
 }
 

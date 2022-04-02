@@ -1,5 +1,5 @@
 import Notifications from './Notifications'
-import Wishlist from './Wishlist'
+import Favorites from './Favorites'
 import Cart from './Cart'
 
 import { Div } from './styles'
@@ -9,7 +9,7 @@ function index() {
   return (
     <Div>
       <Notifications />
-      <Wishlist />
+      <Favorites />
       <Cart />
     </Div>
   )

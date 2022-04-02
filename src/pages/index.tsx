@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { createServer } from 'miragejs'
+import axios from 'axios'
 
 import Main from '../components/Main'
 
@@ -79,4 +80,18 @@ export default function Home() {
       <Main />
     </>
     )
+}
+
+
+export async function getServerSideProps() {
+  axios.get('/api/products')
+    .then(function (response) {
+      const products = response.data
+    })
+  
+  return {
+    props: {
+      products,
+    },
+  }
 }
