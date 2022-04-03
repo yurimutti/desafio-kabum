@@ -1,8 +1,9 @@
 import { SVGProps } from 'react'
+import { Svg } from './styles'
 
 function Notifications(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
       width={36}
       height={36}
@@ -21,7 +22,7 @@ function Notifications(props: SVGProps<SVGSVGElement>) {
           <path fill="#fff" transform="translate(3 3.006)" d="M0 0H30V30H0z" />
         </clipPath>
       </defs>
-    </svg>
+    </Svg>
   )
 }
 

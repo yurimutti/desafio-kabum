@@ -1,23 +1,24 @@
-import React, { useState} from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../../../contexts/UserContext'
 
 import { Nav, Container } from './styles'
 
-import ArrowIcon from './ArrowIcon'
+import ArrowSvg from './ArrowSvg'
+
+type UserTypes = {
+  isLoggedIn: boolean;
+  setIsLoggedIn(arg1: boolean): boolean;
+}
 
 export default function index() {
-  const [isActive, setIsACtive] = useState(false)
-
-  const handleClick = () => {
-    setIsACtive(!isActive)
-  }
-
-  return (
+  const { isLoggedIn } = useContext(UserContext) as UserTypes
+  return isLoggedIn && (
     <Nav>
       <Container>
         <ul>
-          <li className="dropdown" onClick={handleClick}>
+          <li className="dropdown">
             <a href="#">
-              TODOS OS DEPARTAMENTOS <ArrowIcon className={isActive && 'active'} />
+              TODOS OS DEPARTAMENTOS <ArrowSvg/>
             </a>
           </li>
           <li>

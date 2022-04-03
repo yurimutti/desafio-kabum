@@ -1,8 +1,9 @@
 import { SVGProps } from 'react'
+import { Svg } from './styles'
 
 function Favorites(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
+    <Svg
       width={36}
       height={36}
       viewBox="0 0 36 36"
@@ -15,7 +16,7 @@ function Favorites(props: SVGProps<SVGSVGElement>) {
         fill="#fff"
         fillOpacity={0.8}
       />
-    </svg>
+    </Svg>
   )
 }
 

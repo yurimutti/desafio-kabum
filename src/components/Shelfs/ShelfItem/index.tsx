@@ -4,13 +4,25 @@ import Wishlist from '../../Wishlist'
 import BuyButton from './BuyButton'
 import Rating from './Rating'
 import Flag from './Flag'
+import { formatPrice } from '../../../utils/format'
 
 import { ShelfItem } from './styles'
 
+type ProductsProps = {
+  product: {
+    id: number;
+    manufacturer: string;
+    name: string;
+    oldPrice: number;
+    price: number;
+    imageUrl: string;
+    shipping: string[];
+  }
+}
 
-function index() {
+function index({ product } :ProductsProps) {
   const [toggleLikeAndDislike, setToggleLikeAndDislike] = useState(false)
-
+  
   function handleClick() {
     setToggleLikeAndDislike(!toggleLikeAndDislike)
   }
@@ -24,25 +36,26 @@ function index() {
 
       <div className="body">
         <div className="img">
-            <img src="/images/product-01.jpg" alt="" />
+            <img src={product.imageUrl} alt={product.name} />
         </div>
         <div className="info">
-          <span>FABRICANTE</span>
-          <p>Placa-mãe Gigabyte Aorus B450 Aorus M, AMD AM4, mATX, DDR4</p>
+          <span>{product.manufacturer}</span>
+          <p>{product.name}</p>
         </div>
         <div className="price">
-          <span className="oldPrice">R$ 380,99</span>
-          <strong className="priceValue">R$ 280,90</strong>
+          <span className="oldPrice">{formatPrice(product.oldPrice)}</span>
+          <strong className="priceValue">{formatPrice(product.price)}</strong>
           <span className="installments">À VISTA</span>
           <div className="flags">
-            <Flag name="FRETE GRÁTIS" />
-            <Flag name="OPEN BOX" />
+            {product.shipping?.map((item) => (
+                <Flag name={item} />
+            ))}
           </div>
         </div>
       </div>
 
       <div className="bottom">
-        <BuyButton />
+        <BuyButton id={product.id} />
       </div>
     </ShelfItem>
   )

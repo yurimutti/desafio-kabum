@@ -1,9 +1,10 @@
-import { useContext } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
+import React, { useContext, useState } from 'react'
+
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import CartSvg from '../../../CartSvg'
-import { CartContext } from '../../../../contexts/CartContext'
+import { UserContext } from '../../../../contexts/UserContext'
 
 import { BuyButton } from './styles'
 
@@ -12,24 +13,34 @@ type CartTypes = {
   setCart(arg1: number): number;
 }
 
-const index = () => {
-  const { cart, setCart } = useContext(CartContext) as CartTypes 
+type IdProps = {
+  id: number
+}
 
-  const notify = () => {
-    toast.success("Produto Adicionado!", {
-      position: toast.POSITION.TOP_RIGHT
-    });
-  };
+const index = ({ id }: IdProps) => {
+  const { cart, setCart } = useContext(UserContext) as CartTypes 
+  const [ ids, setIds ] = React.useState<number[]>([])
 
-  function handleClick() {
-    setCart(cart + 1)
+  function getStock() {
+    const checkStock = ids.filter((item) => {
+      return item == id
+    }).length
 
-    notify()
+    return checkStock + 1
+  }
+  
+  function handleClick() {  
+    if(getStock() <= 5) {
+      setIds([...ids, id])
+      setCart(cart + 1)
+      toast.success('produto adicionado');
+    } else {
+      toast.error('produto sem estoque');
+    }
   }
 
   return (
     <BuyButton onClick={handleClick}>
-      <ToastContainer />
       <CartSvg width={28} height={28} /> COMPRAR
     </BuyButton>
   )

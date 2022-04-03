@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
-export const CartWrapper = styled.div`
-  position: relative;
+export const Svg = styled.svg`
   cursor: pointer;
 `
 

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Countdown = styled.div`
+export const CountdownWrapper = styled.div`
   background: var(--orange-strong);
   padding: 1.8rem 7.2rem;
 
@@ -10,19 +10,19 @@ export const Countdown = styled.div`
     line-height:3.2rem;
   }
 
-  span {
+  p {
     display: flex;
     align-items: center;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 2.8rem;
     gap:  0.8rem;
+  }
 
-    &.time {
-      font-weight: 800;
-      font-size: 2.6rem;
-      line-height: 2.7rem;
-    }
+  span {
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 2.7rem;
   }
 `
 

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import CartSvg from '../../../CartSvg'
-import { CartContext } from '../../../../contexts/CartContext'
+import { UserContext } from '../../../../contexts/UserContext'
 import Count from './Count'
 
 import { CartWrapper } from './styles'
@@ -11,12 +11,12 @@ type CartTypes = {
 }
 
 function Cart() {
-  const { cart } = useContext(CartContext) as CartTypes
+  const { cart } = useContext(UserContext) as CartTypes
   
   return (
     <CartWrapper>
       <CartSvg />
-      <Count>{cart}</Count>
+      {cart > 0 && <Count>{cart}</Count>} 
     </CartWrapper>
   )
 }

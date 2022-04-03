@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import LoggedIn from './LoggedIn'
 import NotLoggedIn from './NotLoggedIn'
+import { UserContext } from '../../../contexts/UserContext'
 
 import { User } from './styles'
 
-function index() {
-  const [isUserLoggedIn, setIsUserLoggedIn] = useState(true)
+type UserTypes = {
+  isLoggedIn: boolean;
+  setIsLoggedIn(): boolean;
+}
 
-  return isUserLoggedIn ? (
+function index() {
+  const { isLoggedIn, setIsLoggedIn } = useContext(UserContext) as UserTypes
+  
+  return isLoggedIn ? (
     <User>
       <LoggedIn />
     </User>

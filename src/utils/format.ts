@@ -3,6 +3,6 @@ export function formatPrice(price: number){
     new Intl.NumberFormat('pt-br', {
       style: 'currency',
       currency: 'BRL',
-    }).format(price)
+    }).format(price / 100)
   )
 }

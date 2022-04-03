@@ -53,9 +53,7 @@ export const Nav = styled.nav`
         margin-left: 1.6rem;
         transition: all 0.3s;
 
-        &.active {
-          transform: rotate(-180deg);
-        }
+        display: ${({ isActive }) => isActive && "none"};
       }
     }
     

@@ -2,16 +2,27 @@ import styled from 'styled-components'
 
 export const ShelfItem = styled.div`
   background: var(--white);
-  padding: 0.8rem;
   width: 200px;
+  height: 380px;
+  transition: box-shadow 200ms ease 0s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: rgb(40 41 61 / 4%) 0px 4px 8px, rgb(96 97 112 / 16%) 0px 8px 16px;
+  }
 
   .header {
+    padding: 0.8rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
   }
-
+  
   .body {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+    flex: 1;
     .info {
       span {
         display: inline-block;
@@ -42,12 +53,14 @@ export const ShelfItem = styled.div`
       line-height: 21px;
       text-decoration: line-through;
     }
+    
     .priceValue {
       color: var(--orange-text);
       font-size: 24px;
       font-weight: 700;
       line-height: 34px;
     }
+
     .installments {
       color: var(--text-grey-mid);
       font-size: 12px;
@@ -59,7 +72,6 @@ export const ShelfItem = styled.div`
       align-items: center;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 1.6rem;
     }
   }
 

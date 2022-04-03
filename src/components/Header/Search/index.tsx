@@ -1,5 +1,5 @@
 import { Form, SearchWrapper } from './styles'
-import Arrow from './Arrow'
+import ArrowSvg from './ArrowSvg'
 
 function index() {
   return (
@@ -7,7 +7,7 @@ function index() {
       <Form>
         <input type="text" placeholder="Busque aqui" />
         <button>
-          <Arrow />
+          <ArrowSvg />
         </button>
       </Form>
     </SearchWrapper>
