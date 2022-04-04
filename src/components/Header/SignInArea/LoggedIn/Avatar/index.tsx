@@ -1,5 +1,4 @@
 import { Figure } from './styles'
-import Svg from './Svg'
 
 function index() {
   return (
