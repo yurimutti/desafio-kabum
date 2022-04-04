@@ -18,6 +18,12 @@
   <img alt="Kabum" title="Kabum" src="./public/images/preview-desktop.gif" />
 </h2>
 
+<p align="center">
+  <a href="https://kabum-f98jidbi2-yurimutti.vercel.app/" target="_blank">
+    <img alt="See on vercel" src="./public/images/demo-on-vercel.png">
+  </a>
+</p>
+
 <br />
 ## :four_leaf_clover: Tecnologias utilizadas
 
