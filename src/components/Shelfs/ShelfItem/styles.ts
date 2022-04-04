@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const ShelfItem = styled.div`
   background: var(--white);
-  width: 200px;
   height: 380px;
   transition: box-shadow 200ms ease 0s;
   cursor: pointer;

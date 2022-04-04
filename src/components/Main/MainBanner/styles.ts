@@ -9,6 +9,10 @@ export const MainBannerInner = styled.div`
     height: 22vw;
   }
 
+  @media  (max-width: 576px) {
+    height: 32vw;
+  }  
+
   img {
     object-fit: contain;
     object-position: center top;

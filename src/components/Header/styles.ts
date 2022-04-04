@@ -9,6 +9,14 @@ export const Container = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 2.4rem 0;  
+  padding: 2.4rem 0; 
+  
+  
+  @media  (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 1.6rem 0.8rem; 
+  }  
 `
 

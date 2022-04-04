@@ -4,7 +4,7 @@ export const Nav = styled.nav`
   background: var(--orange-weak);
   font-size: 1.4rem;
   height: 3.2rem;
-  line-height: 1.8rem;
+  padding: 0 0.8rem; 
 
   ul { 
     align-items: center;
@@ -12,14 +12,33 @@ export const Nav = styled.nav`
     height: 3.2rem;
     gap: 3.2rem;
 
+    @media  (max-width: 992px) {
+      gap: 0.8rem;
+    }  
+
+    @media  (max-width: 576px) {
+      gap: 0rem;
+    }  
+
     li {
       align-items: center;
       display: flex;
-      font-size: 1.4rem;
-      font-weight: 700;
       height: 100%;
       justify-content: center;
-      line-height: 2.4rem;
+
+      a {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 700;
+
+        @media  (max-width: 992px) {
+          font-size: 1.2rem;
+        }
+
+        @media  (max-width: 576px) {
+          text-align: center;
+        }  
+      }
 
       &::after {
         content: '';
@@ -28,6 +47,15 @@ export const Nav = styled.nav`
         height: 95%;
         width: 2px;
         margin-left: 3.2rem;
+
+        @media  (max-width: 992px) {
+          margin-left: 0.8rem;
+        }  
+
+        @media  (max-width: 576px) {
+          display: none;
+          margin-left: 0;
+        }  
       }
     }
 
@@ -52,9 +80,11 @@ export const Nav = styled.nav`
       svg {
         margin-left: 1.6rem;
         transition: all 0.3s;
-
-        display: ${({ isActive }) => isActive && "none"};
       }
+
+      @media  (max-width: 576px) {
+        flex-basis: 80%;
+      }  
     }
     
   }

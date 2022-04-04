@@ -14,6 +14,11 @@ export const Shelfs = styled.div`
     .slick-list {
       padding: 0 20% 0 0 !important;
     }
+
+    .slick-slide {
+      padding: 0 8px;
+      box-sizing: border-box;
+    }
   }
 `
 

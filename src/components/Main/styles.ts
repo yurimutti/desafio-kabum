@@ -14,8 +14,6 @@ export const Main = styled.main`
     flex: 1 1 0%;
     justify-content: center;
     margin: 0 auto;
-    margin: 0 auto;
-    max-width: 1400px;
     max-width: 1400px;
     overflow-x: hidden;
   }

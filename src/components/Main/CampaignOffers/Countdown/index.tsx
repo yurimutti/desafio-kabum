@@ -13,12 +13,13 @@ const index = () => {
     <CountdownWrapper>
       <Container>
         <h1>BLACK FRIDAY</h1> 
-        <p>A PROMOÇÃO TERMINA EM: <Timer />
-        <Countdown 
-          date={Date.now() + 1000 * 60 * 60 * 24 * 16 } 
-          renderer={renderer} 
-        />
-        {/* 1000 * 60 * 60 * 24 * 16 = 16 days */}
+        <p>A PROMOÇÃO TERMINA EM: <span className="wrapper"><Timer />
+          <Countdown 
+              date={Date.now() + 1000 * 60 * 60 * 24 * 16 } 
+              renderer={renderer} 
+            />
+            {/* 1000 * 60 * 60 * 24 * 16 = 16 days */}
+        </span>
         </p>
       </Container>
     </CountdownWrapper>

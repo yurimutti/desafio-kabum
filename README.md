@@ -1,11 +1,12 @@
 <h1 align="center">
-    <img alt="Kabum" title="Kabum" width="30%" src="./public/images/.jpg" />
+    <img alt="Kabum" title="Kabum" width="30%" src="./public/images/kabum-logo.png" />
     <br>
     Kabum
 </h1>
 
 <h4 align="center">
-  Desafio.
+  Desenvolver uma copia da home do kabum de forma resumida conforme o figma.
+  Ao clicar no botao "comprar" no card dos produtos, deverá somar a quantidade no icone do carrinho.
 </h4>
 
 <p align="center">
@@ -14,23 +15,23 @@
 </p>
 
 <h2 align="center">
-  <img alt="Kabum" title="Kabum" src="./src/img/github/myhero-gif-web.gif" />
+  <img alt="Kabum" title="Kabum" src="./public/images/preview-desktop.gif" />
 </h2>
 
 <br />
-
-<h2 align="center">
-  <img alt="Kabum" title="Kabum" src="./src/img/github/myhero-gif-mobile.gif" />
-</h2>
-
 ## :four_leaf_clover: Tecnologias utilizadas
 
 Esse projeto está sendo desenvolvido com as seguintes tecnologias.
 
 -   [ReactJS](https://reactjs.org/)
+-   [NextJS](https://nextjs.org/)
+-   [TypeScript](https://www.typescriptlang.org/docs/)
+-   [styled-components](https://github.com/styled-components/styled-components)
 -   [Axios](https://github.com/axios/axios)
--   [swiperjs](https://swiperjs.com/react)
--   [react-icons](https://react-icons.github.io/react-icons/)
+-   [react-slick](https://github.com/akiran/react-slick)
+-   [react-toastify](https://github.com/fkhadra/react-toastify)
+-   [react-countdown](https://github.com/ndresx/react-countdown)
+-   [miragejs](https://github.com/miragejs/miragejs)
 -   [VS Code][vc]
 
 ## :rocket: Subindo a aplicação
@@ -40,10 +41,10 @@ o [Node.js][nodejs] instalados em sua máquina.
 
 ```bash
 # Faça um clone da aplicação.
-$ git clone https://github.com/yurimutti/myhero.git
+$ git clone https://github.com/yurimutti/kabum.git
 
 # Vá até o repositório.
-$ cd myhero
+$ cd kabum
 
 # Instale as dependências.
 $ yarn
