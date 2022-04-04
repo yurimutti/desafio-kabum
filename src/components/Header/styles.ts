@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Header = styled.header`
+export const HeaderElement = styled.header`
   background: var(--blue)
 `
 export const Container = styled.div`

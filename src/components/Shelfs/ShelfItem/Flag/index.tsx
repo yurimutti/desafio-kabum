@@ -1,4 +1,4 @@
-import { Flag } from './styles'
+import { FlagElement } from './styles'
 import BoxSvg from './BoxSvg'
 import CarSvg from './CarSvg'
 
@@ -6,7 +6,7 @@ type FlagProps = {
   name: string
 }
 
-const index = ({ name }: FlagProps) => {
+const Flag = ({ name }: FlagProps) => {
 
   function renderIcon(name) {
     switch (name) {
@@ -18,11 +18,11 @@ const index = ({ name }: FlagProps) => {
   }
 
   return (
-    <Flag>
+    <FlagElement>
       {renderIcon(name)}
       <span>{name}</span>
-    </Flag>
+    </FlagElement>
   )
 }
 
-export default index
+export default Flag

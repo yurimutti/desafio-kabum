@@ -1,12 +1,12 @@
 import { Figure } from './styles'
 import Svg from './Svg'
 
-function index() {
+const Avatar = (): JSX.Element => {
   return (
     <Figure>
       <Svg />
     </Figure>
   )
-}
+};
 
-export default index
+export default Avatar

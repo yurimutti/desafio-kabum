@@ -10,7 +10,7 @@ type CartTypes = {
   setCart(arg1: number): number;
 }
 
-function Cart() {
+const Cart = (): JSX.Element => {
   const { cart } = useContext(UserContext) as CartTypes
   
   return (
@@ -19,6 +19,6 @@ function Cart() {
       {cart > 0 && <Count>{cart}</Count>} 
     </CartWrapper>
   )
-}
+};
 
 export default Cart

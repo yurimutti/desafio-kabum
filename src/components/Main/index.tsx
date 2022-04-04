@@ -2,20 +2,23 @@ import MainBanner from "./MainBanner";
 import CampaignOffers from "./CampaignOffers";
 import BottomBanners from "./BottomBanners";
 
-import { Main } from './styles'
+import { MainElement } from './styles'
 
-function index() {
+const Main = (): JSX.Element => {
   return (
     <>
-      <Main >
+      <MainElement >
         <div className="mainWrapper">
           <MainBanner />
           <CampaignOffers /> 
           <BottomBanners />
         </div>
-      </Main>
+      </MainElement>
     </>
   )
-}
+};
 
-export default index
+export default Main
+
+
+

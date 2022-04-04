@@ -1,11 +1,11 @@
 import { MainBannerInner } from './styles'
 
-function index() {
+const MainBanner = (): JSX.Element => {
   return (
     <MainBannerInner href="#">
       <img src="/images/top-banner.jpg" alt="Banner Principal KaBuM!"/>
     </MainBannerInner>
-  )
-}
+)
+};
 
-export default index
+export default MainBanner

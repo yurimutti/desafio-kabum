@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const BottomBanner = styled.div`
+export const BottomBannerElement  = styled.div`
   border: 1px solid #f2f3f4;  
   max-width: 384px;
   

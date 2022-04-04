@@ -1,4 +1,4 @@
-import { Header, Container } from './styles'
+import { HeaderElement, Container } from './styles'
 
 import Menu from './Menu'
 import MenuExpansive from './MenuExpansive'
@@ -7,10 +7,10 @@ import Search from './Search'
 import SignInArea from './SignInArea'
 import Links from './Links'
 
-function index() {
+const Header = (): JSX.Element => {
   return (
     <>
-      <Header>
+      <HeaderElement>
         <Container>
           <Menu />
           <Logo />
@@ -18,10 +18,10 @@ function index() {
           <SignInArea />
           <Links />
         </Container>
-      </Header>
+      </HeaderElement>
       <MenuExpansive />
     </>
   )
-}
+};
 
-export default index
+export default Header

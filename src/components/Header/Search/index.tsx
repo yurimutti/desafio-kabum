@@ -1,7 +1,7 @@
 import { Form, SearchWrapper } from './styles'
 import ArrowSvg from './ArrowSvg'
 
-function index() {
+const Search = (): JSX.Element => {
   return (
     <SearchWrapper>
       <Form>
@@ -12,6 +12,6 @@ function index() {
       </Form>
     </SearchWrapper>
   )
-}
+};
 
-export default index
+export default Search

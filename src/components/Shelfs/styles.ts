@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Shelfs = styled.div`
+export const ShelfsElement = styled.div`
   padding: 3.2rem 0;
   background: var(--white-weak);
   

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Flag = styled.div`
+export const FlagElement = styled.div`
   align-items: center;
   display: flex;
   gap: 0.4rem;

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CartSvg from '../../../CartSvg'
 import { UserContext } from '../../../../contexts/UserContext'
 
-import { BuyButton } from './styles'
+import { BuyButtonElement } from './styles'
 
 type CartTypes = {
   cart: number;
@@ -17,7 +17,7 @@ type IdProps = {
   id: number
 }
 
-const index = ({ id }: IdProps) => {
+const BuyButton = ({ id }: IdProps) => {
   const { cart, setCart } = useContext(UserContext) as CartTypes 
   const [ ids, setIds ] = React.useState<number[]>([])
 
@@ -40,10 +40,10 @@ const index = ({ id }: IdProps) => {
   }
 
   return (
-    <BuyButton onClick={handleClick}>
+    <BuyButtonElement onClick={handleClick}>
       <CartSvg width={28} height={28} /> COMPRAR
-    </BuyButton>
+    </BuyButtonElement>
   )
-}
+};
 
-export default index
+export default BuyButton

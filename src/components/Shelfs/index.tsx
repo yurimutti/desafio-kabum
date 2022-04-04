@@ -5,7 +5,7 @@ import axios from 'axios'
 import NextArrow from '../Slider/NextArrow'
 import PrevArrow from '../Slider/PrevArrow'
 import ShelfItem from './ShelfItem'
-import { Shelfs, Container } from './styles'
+import { ShelfsElement, Container } from './styles'
 
 
 type Products = {
@@ -18,8 +18,8 @@ type Products = {
   shipping: string[];
 }
 
-function index() {
-  const [products, setProducts] = useState<Products[]>([])
+const Shelfs = (): JSX.Element => {
+const [products, setProducts] = useState<Products[]>([])
 
   let settings = {
     centerMode: true,
@@ -68,7 +68,7 @@ function index() {
   },[])
 
   return (
-    <Shelfs>
+    <ShelfsElement>
       <Container>
         <Slider {...settings}>
           {products.map((product) => (
@@ -76,8 +76,10 @@ function index() {
           ))}
         </Slider>
       </Container>
-    </Shelfs>
+    </ShelfsElement>
   )
-}
+};
 
-export default index
+export default Shelfs
+
+

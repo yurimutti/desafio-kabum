@@ -11,7 +11,7 @@ type CartTypes = {
   isLoggedIn: boolean;
 }
 
-function index() {
+const Links = (): JSX.Element => {
   const { isLoggedIn } = useContext(UserContext) as CartTypes
   return (
     <Div>
@@ -20,6 +20,6 @@ function index() {
       <Cart />
     </Div>
   )
-}
+};
 
-export default index
+export default Links

@@ -10,8 +10,8 @@ type UserTypes = {
   setIsLoggedIn(): boolean;
 }
 
-function index() {
-  const { isLoggedIn, setIsLoggedIn } = useContext(UserContext) as UserTypes
+const SignInArea = (): JSX.Element => {
+  const { isLoggedIn } = useContext(UserContext) as UserTypes
   
   return isLoggedIn ? (
     <User>
@@ -22,6 +22,6 @@ function index() {
       <NotLoggedIn />
     </User>
   )
-}
+};
 
-export default index
+export default SignInArea

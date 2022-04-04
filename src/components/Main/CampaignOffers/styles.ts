@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const CampaingOffers = styled.div`
+export const CampaingOffersElement = styled.div`
   width: 100%;
 `
 

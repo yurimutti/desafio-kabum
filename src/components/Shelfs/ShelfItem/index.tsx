@@ -20,7 +20,7 @@ type ProductsProps = {
   }
 }
 
-function index({ product } :ProductsProps) {
+const ShelfItems = ({ product } :ProductsProps) => {
   const [toggleLikeAndDislike, setToggleLikeAndDislike] = useState(false)
   
   function handleClick() {
@@ -47,8 +47,8 @@ function index({ product } :ProductsProps) {
           <strong className="priceValue">{formatPrice(product.price)}</strong>
           <span className="installments">À VISTA</span>
           <div className="flags">
-            {product.shipping?.map((item) => (
-                <Flag name={item} />
+            {product.shipping?.map((item, index) => (
+                <Flag key={index} name={item} />
             ))}
           </div>
         </div>
@@ -59,6 +59,6 @@ function index({ product } :ProductsProps) {
       </div>
     </ShelfItem>
   )
-}
+};
 
-export default index
+export default ShelfItems

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BuyButton = styled.button`
+export const BuyButtonElement = styled.button`
   background-color: var(--orange-weak);
   border-radius: 4px;
   color: var(--white)

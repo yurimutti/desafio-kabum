@@ -7,8 +7,7 @@ type UserTypes = {
   setIsLoggedIn(arg1: boolean): boolean;
 }
 
-function index() {
-
+const UserInfo = (): JSX.Element => {
   const { isLoggedIn, setIsLoggedIn } = useContext(UserContext) as UserTypes
 
   function handleClick() {
@@ -21,6 +20,7 @@ function index() {
       crie seu <a href="#">Cadastro</a>
     </Span>
   )
-}
+};
 
-export default index
+
+export default UserInfo

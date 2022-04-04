@@ -1,15 +1,15 @@
 import Shelfs from "../../Shelfs"
-import Countdown from "./Countdown"
+import CountdownTimer from "./CountdownTimer"
 
-import { CampaingOffers } from "./styles"
+import { CampaingOffersElement } from "./styles"
 
-function index() {
+const CampaingOffers = (): JSX.Element => {
   return (
-    <CampaingOffers>
-      <Countdown />
+    <CampaingOffersElement>
+      <CountdownTimer />
       <Shelfs />
-    </CampaingOffers>
+    </CampaingOffersElement>
   )
-}
+};
 
-export default index
+export default CampaingOffers

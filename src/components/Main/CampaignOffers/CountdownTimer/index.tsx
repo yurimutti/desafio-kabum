@@ -4,7 +4,7 @@ import Countdown from 'react-countdown';
 import Timer from './Timer'
 import { CountdownWrapper, Container } from "./styles"
 
-const index = () => {
+const CountdownTimer = (): JSX.Element => {
   const renderer = ({ days,hours, minutes, seconds }) => {
     return <span>{days}D {hours}:{minutes}:{seconds}</span>;
   };
@@ -26,4 +26,4 @@ const index = () => {
   )
 }
 
-export default index
+export default CountdownTimer

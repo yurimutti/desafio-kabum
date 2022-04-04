@@ -10,7 +10,7 @@ type UserTypes = {
   setIsLoggedIn(arg1: boolean): boolean;
 }
 
-export default function index() {
+const MenuExpansive = (): JSX.Element => {
   const { isLoggedIn } = useContext(UserContext) as UserTypes
   return isLoggedIn && (
     <Nav>
@@ -31,6 +31,6 @@ export default function index() {
       </Container>
     </Nav>
   )
-}
+};
 
-
+export default MenuExpansive

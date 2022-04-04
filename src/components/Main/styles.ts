@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Main = styled.main`
+export const MainElement = styled.main`
   background-repeat: no-repeat;
   background-size: contain;
   background: var(--dark-blue);

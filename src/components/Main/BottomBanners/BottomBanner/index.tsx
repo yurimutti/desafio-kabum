@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BottomBanner } from './styles'
+import { BottomBannerElement } from './styles'
 
 interface BottomBannerProps {
   title: string
@@ -9,9 +9,9 @@ interface BottomBannerProps {
   alt: string
 }
 
-const index = ({ title, description, img, alt }: BottomBannerProps) => {
+const BottomBanner = ({ title, description, img, alt }: BottomBannerProps) => {
   return (
-    <BottomBanner>
+    <BottomBannerElement >
       <a href="#">
         <div className="info">
           <h2>{title}</h2>
@@ -19,8 +19,8 @@ const index = ({ title, description, img, alt }: BottomBannerProps) => {
         </div>
         <img src={img} alt={alt} />
       </a>
-    </BottomBanner>
+    </BottomBannerElement>
   )
-}
+};
 
-export default index
+export default BottomBanner

@@ -1,13 +1,13 @@
 import Avatar from './Avatar';
 import UserInfo from './UserInfo';
 
-const index = () => {
+const LoggedIn = (): JSX.Element => {
   return (
     <>
       <Avatar />
       <UserInfo />
     </>
   )
-}
+};
 
-export default index
+export default LoggedIn

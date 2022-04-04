@@ -1,9 +1,10 @@
 import { Span } from './styles'
 
-const index = (props) => {
+const Count = (props): JSX.Element => {
   return (
     <Span>{props.children}</Span>
   )
-}
+};
 
-export default index
+export default Count
+
