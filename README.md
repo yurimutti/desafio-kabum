@@ -5,8 +5,7 @@
 </h1>
 
 <h4 align="center">
-  Desenvolver uma copia da home do kabum de forma resumida conforme o figma.
-  Ao clicar no botao "comprar" no card dos produtos, deverá somar a quantidade no icone do carrinho.
+  Copia da home do kabum de forma resumida.
 </h4>
 
 <p align="center">
